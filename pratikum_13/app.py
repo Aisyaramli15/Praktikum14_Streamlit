@@ -97,8 +97,8 @@ st.markdown("""
 # ── Load artifacts ───────────────────────────────────────────────────────────
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load('model.pkl')
-    district_mean_price = joblib.load('district_mean_price.pkl')
+    model = joblib.load('pratikum_13/model.pkl')
+    district_mean_price = joblib.load('pratikum_13/district_mean_price.pkl')
     return model, district_mean_price
 
 model, district_mean_price = load_artifacts()
